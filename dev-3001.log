@@ -1,0 +1,546 @@
+
+> site@0.1.0 dev
+> next dev --hostname 0.0.0.0 --port 3001
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/novak/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/novak/projects/MatkoKlima/site/package-lock.json
+
+▲ Next.js 16.1.1 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://0.0.0.0:3001
+
+✓ Starting...
+✓ Ready in 843ms
+ GET /ponuda-klima 200 in 568ms (compile: 358ms, render: 209ms)
+ GET /ponuda-klima 200 in 81ms (compile: 5ms, render: 76ms)
+ GET /ponuda-klima 200 in 81ms (compile: 5ms, render: 76ms)
+ GET /ponuda-klima 200 in 69ms (compile: 2ms, render: 67ms)
+ GET /ponuda-klima 200 in 78ms (compile: 3ms, render: 74ms)
+ GET /ponuda-klima 200 in 65ms (compile: 2ms, render: 63ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /cenovnik 200 in 366ms (compile: 324ms, generate-params: 299ms, render: 42ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /cenovnik 404 in 82ms (compile: 20ms, generate-params: 18ms, render: 62ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /cenovnik 404 in 50ms (compile: 3ms, generate-params: 42µs, render: 48ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /cenovnik 404 in 64ms (compile: 21ms, generate-params: 19ms, render: 43ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /cenovnik 404 in 53ms (compile: 3ms, generate-params: 41µs, render: 49ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 39ms (compile: 21ms, generate-params: 19ms, render: 17ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 61ms (compile: 29ms, generate-params: 26ms, render: 32ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /cenovnik 200 in 37ms (compile: 21ms, generate-params: 19ms, render: 16ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /cenovnik 200 in 34ms (compile: 20ms, generate-params: 18ms, render: 15ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /cenovnik 200 in 41ms (compile: 20ms, generate-params: 18ms, render: 21ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 37ms (compile: 21ms, generate-params: 18ms, render: 17ms)
+✓ Compiled in 367ms
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 224ms (compile: 133ms, generate-params: 21ms, render: 91ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 27ms (compile: 3ms, generate-params: 25µs, render: 24ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 21ms (compile: 1943µs, generate-params: 21µs, render: 19ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 21ms (compile: 1919µs, generate-params: 19µs, render: 19ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 23ms (compile: 1905µs, generate-params: 28µs, render: 21ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 22ms (compile: 1923µs, generate-params: 18µs, render: 20ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 25ms (compile: 2ms, generate-params: 114µs, render: 22ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 38ms (compile: 3ms, generate-params: 43µs, render: 35ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 22ms (compile: 2ms, generate-params: 20µs, render: 20ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 26ms (compile: 1694µs, generate-params: 21µs, render: 24ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 68ms (compile: 21ms, generate-params: 19ms, render: 47ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 50ms (compile: 1779µs, generate-params: 23µs, render: 48ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 48ms (compile: 1901µs, generate-params: 27µs, render: 46ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 200 in 60ms (compile: 1813µs, generate-params: 20µs, render: 59ms)
+ GET /o-nama 200 in 44ms (compile: 2ms, generate-params: 20µs, render: 41ms)
+ GET /o-nama 200 in 25ms (compile: 1676µs, generate-params: 19µs, render: 23ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /o-nama 404 in 109ms (compile: 21ms, generate-params: 19ms, render: 88ms)
+ GET /o-nama 200 in 588ms (compile: 493ms, render: 95ms)
+ GET /o-nama 200 in 33ms (compile: 4ms, render: 29ms)
+ GET /o-nama 200 in 42ms (compile: 2ms, render: 40ms)
+ GET /o-nama 200 in 26ms (compile: 1996µs, render: 24ms)
+ GET /o-nama 200 in 47ms (compile: 2ms, render: 45ms)
+ GET /o-nama 200 in 117ms (compile: 1909µs, render: 115ms)
+ GET /cenovnik 200 in 280ms (compile: 252ms, render: 28ms)
+ GET /o-nama 200 in 19ms (compile: 2ms, render: 17ms)
+ GET /o-nama 200 in 23ms (compile: 3ms, render: 20ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /kontakt 200 in 73ms (compile: 35ms, generate-params: 24ms, render: 38ms)
+ GET / 200 in 71ms (compile: 14ms, render: 58ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:14:43)
+  12 |
+  13 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 14 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  15 |   if (!page) {
+  16 |     notFound();
+  17 |   }
+ GET /kontakt 200 in 45ms (compile: 25ms, generate-params: 23ms, render: 20ms)
+✓ Compiled in 53ms
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:21:43)
+  19 |
+  20 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 21 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  22 |   if (!page) {
+  23 |     notFound();
+  24 |   }
+ GET /kontakt 200 in 166ms (compile: 89ms, generate-params: 23ms, render: 76ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:21:43)
+  19 |
+  20 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 21 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  22 |   if (!page) {
+  23 |     notFound();
+  24 |   }
+ GET /kontakt 404 in 121ms (compile: 24ms, generate-params: 21ms, render: 97ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:21:43)
+  19 |
+  20 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 21 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  22 |   if (!page) {
+  23 |     notFound();
+  24 |   }
+ GET /kontakt 404 in 47ms (compile: 2ms, generate-params: 24µs, render: 45ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:21:43)
+  19 |
+  20 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 21 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  22 |   if (!page) {
+  23 |     notFound();
+  24 |   }
+ GET /kontakt 404 in 64ms (compile: 1946µs, generate-params: 23µs, render: 62ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:21:43)
+  19 |
+  20 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 21 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  22 |   if (!page) {
+  23 |     notFound();
+  24 |   }
+ GET /kontakt 404 in 68ms (compile: 22ms, generate-params: 20ms, render: 46ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:21:43)
+  19 |
+  20 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 21 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  22 |   if (!page) {
+  23 |     notFound();
+  24 |   }
+ GET /kontakt 404 in 64ms (compile: 23ms, generate-params: 21ms, render: 41ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:21:43)
+  19 |
+  20 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 21 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  22 |   if (!page) {
+  23 |     notFound();
+  24 |   }
+ GET /kontakt 404 in 60ms (compile: 2ms, generate-params: 42µs, render: 57ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:21:43)
+  19 |
+  20 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 21 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  22 |   if (!page) {
+  23 |     notFound();
+  24 |   }
+ GET /kontakt 404 in 69ms (compile: 2ms, generate-params: 26µs, render: 66ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:21:43)
+  19 |
+  20 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 21 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  22 |   if (!page) {
+  23 |     notFound();
+  24 |   }
+ GET /kontakt 404 in 70ms (compile: 24ms, generate-params: 21ms, render: 47ms)
+Error: Route "/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ContentPage (app/[slug]/page.tsx:21:43)
+  19 |
+  20 | export default async function ContentPage({ params }: { params: { slug: string } }) {
+> 21 |   const page = await getPageBySlug(params.slug);
+     |                                           ^
+  22 |   if (!page) {
+  23 |     notFound();
+  24 |   }
+ GET /kontakt 404 in 59ms (compile: 3ms, generate-params: 34µs, render: 55ms)
+ GET /cenovnik 200 in 19ms (compile: 2ms, render: 17ms)
+✓ Compiled in 71ms
+ GET /cenovnik 200 in 206ms (compile: 113ms, render: 93ms)
+ GET /cenovnik 200 in 58ms (compile: 2ms, render: 56ms)
+ GET /cenovnik 200 in 95ms (compile: 1912µs, render: 94ms)
+ GET /cenovnik 200 in 90ms (compile: 4ms, render: 86ms)
+ GET /cenovnik 200 in 67ms (compile: 3ms, render: 64ms)
+ GET /cenovnik 200 in 61ms (compile: 1794µs, render: 59ms)
+ GET /cenovnik 200 in 60ms (compile: 1966µs, render: 59ms)
+ GET /cenovnik 200 in 61ms (compile: 1830µs, render: 59ms)
+ GET /cenovnik 200 in 66ms (compile: 1865µs, render: 64ms)
+ GET /cenovnik 200 in 67ms (compile: 1548µs, render: 65ms)
+ GET /cenovnik 200 in 54ms (compile: 4ms, render: 50ms)
+ GET /cenovnik 200 in 81ms (compile: 1703µs, render: 79ms)
+ GET /cenovnik 200 in 98ms (compile: 1953µs, render: 96ms)
+ GET /cenovnik 200 in 102ms (compile: 4ms, render: 98ms)
+ GET /cenovnik 200 in 116ms (compile: 2ms, render: 113ms)
+ GET /cenovnik 200 in 103ms (compile: 2ms, render: 101ms)
+ GET /cenovnik 200 in 91ms (compile: 4ms, render: 87ms)
+ GET /cenovnik 200 in 67ms (compile: 1555µs, render: 66ms)
+ GET /cenovnik 200 in 52ms (compile: 4ms, render: 48ms)
+ GET /cenovnik 200 in 35ms (compile: 2ms, render: 33ms)
+ GET /cenovnik 200 in 97ms (compile: 3ms, render: 94ms)
+Error: Route "/kontakt" used `searchParams.sent`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at KontaktPage (app/kontakt/page.tsx:42:18)
+  40 |     ? `${siteUrl.replace(/\/$/, "")}/kontakt?sent=1`
+  41 |     : undefined;
+> 42 |   const isSent = searchParams?.sent === "1";
+     |                  ^
+  43 |
+  44 |   return (
+  45 |     <div className="bg-[color:var(--mk-white)] text-[color:var(--mk-ink)]">
+ GET /kontakt 200 in 286ms (compile: 248ms, render: 38ms)
+Error: Route "/kontakt" used `searchParams.sent`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at KontaktPage (app/kontakt/page.tsx:42:18)
+  40 |     ? `${siteUrl.replace(/\/$/, "")}/kontakt?sent=1`
+  41 |     : undefined;
+> 42 |   const isSent = searchParams?.sent === "1";
+     |                  ^
+  43 |
+  44 |   return (
+  45 |     <div className="bg-[color:var(--mk-white)] text-[color:var(--mk-ink)]">
+ GET /kontakt 200 in 78ms (compile: 2ms, render: 76ms)
+Error: Route "/kontakt" used `searchParams.sent`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at KontaktPage (app/kontakt/page.tsx:42:18)
+  40 |     ? `${siteUrl.replace(/\/$/, "")}/kontakt?sent=1`
+  41 |     : undefined;
+> 42 |   const isSent = searchParams?.sent === "1";
+     |                  ^
+  43 |
+  44 |   return (
+  45 |     <div className="bg-[color:var(--mk-white)] text-[color:var(--mk-ink)]">
+ GET /kontakt 200 in 53ms (compile: 1936µs, render: 51ms)
+Error: Route "/kontakt" used `searchParams.sent`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at KontaktPage (app/kontakt/page.tsx:42:18)
+  40 |     ? `${siteUrl.replace(/\/$/, "")}/kontakt?sent=1`
+  41 |     : undefined;
+> 42 |   const isSent = searchParams?.sent === "1";
+     |                  ^
+  43 |
+  44 |   return (
+  45 |     <div className="bg-[color:var(--mk-white)] text-[color:var(--mk-ink)]">
+ GET /kontakt 200 in 89ms (compile: 2ms, render: 87ms)
+Error: Route "/kontakt" used `searchParams.sent`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at KontaktPage (app/kontakt/page.tsx:42:18)
+  40 |     ? `${siteUrl.replace(/\/$/, "")}/kontakt?sent=1`
+  41 |     : undefined;
+> 42 |   const isSent = searchParams?.sent === "1";
+     |                  ^
+  43 |
+  44 |   return (
+  45 |     <div className="bg-[color:var(--mk-white)] text-[color:var(--mk-ink)]">
+ GET /kontakt 200 in 28ms (compile: 2ms, render: 26ms)
+Error: Route "/kontakt" used `searchParams.sent`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at KontaktPage (app/kontakt/page.tsx:42:18)
+  40 |     ? `${siteUrl.replace(/\/$/, "")}/kontakt?sent=1`
+  41 |     : undefined;
+> 42 |   const isSent = searchParams?.sent === "1";
+     |                  ^
+  43 |
+  44 |   return (
+  45 |     <div className="bg-[color:var(--mk-white)] text-[color:var(--mk-ink)]">
+ GET /kontakt 200 in 24ms (compile: 1965µs, render: 22ms)
+ GET /o-nama 200 in 31ms (compile: 10ms, render: 21ms)
+Error: Route "/kontakt" used `searchParams.sent`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at KontaktPage (app/kontakt/page.tsx:42:18)
+  40 |     ? `${siteUrl.replace(/\/$/, "")}/kontakt?sent=1`
+  41 |     : undefined;
+> 42 |   const isSent = searchParams?.sent === "1";
+     |                  ^
+  43 |
+  44 |   return (
+  45 |     <div className="bg-[color:var(--mk-white)] text-[color:var(--mk-ink)]">
+ GET /kontakt 200 in 33ms (compile: 3ms, render: 30ms)
+Error: Route "/kontakt" used `searchParams.sent`. `searchParams` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at KontaktPage (app/kontakt/page.tsx:42:18)
+  40 |     ? `${siteUrl.replace(/\/$/, "")}/kontakt?sent=1`
+  41 |     : undefined;
+> 42 |   const isSent = searchParams?.sent === "1";
+     |                  ^
+  43 |
+  44 |   return (
+  45 |     <div className="bg-[color:var(--mk-white)] text-[color:var(--mk-ink)]">
+ GET /kontakt 200 in 36ms (compile: 3ms, render: 33ms)
+ GET /o-nama 200 in 21ms (compile: 2ms, render: 19ms)
+ GET /cenovnik 200 in 20ms (compile: 1852µs, render: 18ms)
+ GET /o-nama 200 in 20ms (compile: 1929µs, render: 18ms)
+ GET /cenovnik 200 in 22ms (compile: 2ms, render: 20ms)
+ GET /ponuda-klima 200 in 41ms (compile: 12ms, render: 30ms)
+ GET /usluge 200 in 66ms (compile: 26ms, render: 39ms)
+ GET / 200 in 120ms (compile: 21ms, render: 99ms)

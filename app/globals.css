@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --mk-white: #f9fbff;
+  --mk-ink: #0b1020;
+  --mk-blue: #1f6cff;
+  --mk-blue-deep: #12306a;
+  --mk-blue-soft: #e6f0ff;
+  --mk-orange: #f28c2b;
+  --mk-orange-soft: #fff1e2;
+  --mk-border: #d9e5f7;
+  --mk-muted: #5c6a82;
+}
+
+@theme inline {
+  --color-background: var(--mk-white);
+  --color-foreground: var(--mk-ink);
+  --font-sans: var(--font-body);
+}
+
+body {
+  background: radial-gradient(circle at top left, #eef4ff 0%, #ffffff 45%, #f6f9ff 100%);
+  color: var(--mk-ink);
+  font-family: var(--font-body), sans-serif;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display), serif;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: var(--mk-blue);
+  color: white;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--mk-border);
+  box-shadow: 0 20px 40px rgba(15, 30, 60, 0.12);
+}
+
+.hero-grid {
+  background-image: radial-gradient(circle, rgba(31, 108, 255, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseSoft {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.animate-rise {
+  animation: rise 0.7s ease forwards;
+}
+
+.animate-rise-stagger {
+  animation: rise 0.7s ease forwards;
+  animation-delay: var(--delay, 0ms);
+}
+
+.animate-pulse-soft {
+  animation: pulseSoft 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-rise,
+  .animate-rise-stagger,
+  .animate-pulse-soft {
+    animation: none;
+  }
+}
