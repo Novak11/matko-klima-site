@@ -48,28 +48,11 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="ml-auto flex items-center gap-2">
-          <div className="hidden items-center gap-2 md:flex">
-            <a
-              className="whitespace-nowrap rounded-full bg-[color:var(--mk-orange)] px-3 py-2 text-xs font-semibold text-white transition hover:brightness-95 sm:px-4 sm:text-sm"
-              href="tel:0645356387"
-            >
-              Pozovite 064 535 6387
-            </a>
-            <Link
-              className="whitespace-nowrap rounded-full border border-[color:var(--mk-blue)] px-3 py-2 text-xs font-semibold text-[color:var(--mk-blue)] shadow-sm transition hover:bg-[color:var(--mk-blue)] hover:text-white sm:px-4 sm:text-sm"
-              href="/kontakt"
-            >
-              Zakažite servis
-            </Link>
-          </div>
-
-          <div className="xl:hidden">
-            <HamburgerIcon
-              isOpen={isMenuOpen}
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            />
-          </div>
+        <div className="ml-auto xl:hidden">
+          <HamburgerIcon
+            isOpen={isMenuOpen}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          />
         </div>
       </div>
 
