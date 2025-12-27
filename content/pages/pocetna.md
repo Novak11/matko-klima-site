@@ -3,7 +3,7 @@
 Source: https://centarklimauredjaja.com/
 Slug: pocetna
 
-## OVLAŠĆENI SERVIS KLIMA UREĐAJA
+## SERVIS KLIMA UREĐAJA I ELEKTRO RADOVI
 - Stalo nam je do vas
 
 ## Kvalitet usluge uvek stavljamo na prvo mesto.
