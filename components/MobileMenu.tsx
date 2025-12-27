@@ -39,14 +39,14 @@ export function MobileMenu({ isOpen, onClose, navItems }: MobileMenuProps) {
     <>
       {/* Backdrop */}
       <div
-        className="fixed inset-0 z-[55] bg-black/50 backdrop-blur-sm transition-opacity duration-300"
+        className="fixed inset-0 z-[55] bg-black/70 transition-opacity duration-300"
         onClick={onClose}
         aria-hidden="true"
       />
 
       {/* Menu Panel */}
       <div
-        className={`fixed right-0 top-0 z-[60] h-full w-[280px] bg-white shadow-2xl transition-transform duration-300 ${
+        className={`fixed right-0 top-0 z-[60] h-full w-[320px] border-l-4 border-l-[color:var(--mk-blue)] bg-white shadow-2xl transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

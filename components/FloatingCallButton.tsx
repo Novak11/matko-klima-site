@@ -2,16 +2,16 @@ export function FloatingCallButton() {
   return (
     <a
       href="tel:0645356387"
-      className="fixed bottom-6 right-6 z-50 hidden h-12 w-12 items-center justify-center rounded-full bg-[color:var(--mk-orange)] text-white shadow-lg transition hover:brightness-95 md:inline-flex"
+      className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-[color:var(--mk-orange)] text-white shadow-2xl transition-all hover:scale-110 active:scale-95 md:bottom-8 md:right-8 md:h-16 md:w-16"
       aria-label="Pozovite 064 535 6387"
     >
       <svg
         aria-hidden="true"
         viewBox="0 0 24 24"
-        className="h-5 w-5"
+        className="h-8 w-8"
         fill="none"
         stroke="currentColor"
-        strokeWidth="2"
+        strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       >
