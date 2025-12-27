@@ -1,7 +1,9 @@
 "use client";
 
-import { useRef } from "react";
+import { useState } from "react";
 import Link from "next/link";
+import { HamburgerIcon } from "./HamburgerIcon";
+import { MobileMenu } from "./MobileMenu";
 
 const navItems = [
   { href: "/", label: "Početna" },
@@ -13,12 +15,7 @@ const navItems = [
 ];
 
 export function Header() {
-  const detailsRef = useRef<HTMLDetailsElement | null>(null);
-  const closeMenu = () => {
-    if (detailsRef.current) {
-      detailsRef.current.open = false;
-    }
-  };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-[color:var(--mk-border)] bg-white/90 backdrop-blur">
@@ -67,34 +64,20 @@ export function Header() {
             </Link>
           </div>
 
-          <details ref={detailsRef} className="group relative xl:hidden">
-            <summary className="cursor-pointer list-none rounded-full border border-[color:var(--mk-border)] px-3 py-2 text-xs font-semibold text-[color:var(--mk-muted)] sm:text-sm">
-              Meni
-            </summary>
-            <div className="absolute right-0 mt-3 w-56 rounded-2xl border border-[color:var(--mk-border)] bg-white p-4 shadow-lg">
-              <div className="flex flex-col gap-3 text-sm font-medium text-[color:var(--mk-ink)]">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="text-[color:var(--mk-ink)]"
-                    onClick={closeMenu}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-                <a
-                  className="mt-2 rounded-full bg-[color:var(--mk-orange)] px-3 py-2 text-center text-white"
-                  href="tel:0645356387"
-                  onClick={closeMenu}
-                >
-                  Pozovite
-                </a>
-              </div>
-            </div>
-          </details>
+          <div className="xl:hidden">
+            <HamburgerIcon
+              isOpen={isMenuOpen}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            />
+          </div>
         </div>
       </div>
+
+      <MobileMenu
+        isOpen={isMenuOpen}
+        onClose={() => setIsMenuOpen(false)}
+        navItems={navItems}
+      />
     </header>
   );
 }
