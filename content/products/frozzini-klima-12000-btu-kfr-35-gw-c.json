@@ -1,0 +1,67 @@
+{
+  "id": 116,
+  "title": "Frozzini klima | On Off | 12000 BTU | KFR 35GW/C",
+  "slug": "frozzini-klima-12000-btu-kfr-35-gw-c",
+  "source_url": "https://www.novazza.rs/artikl/frozzini-klima-12000-btu-kfr-35-gw-c/",
+  "excerpt_html": "<p><span style=\"color: #ff0000;\">KFR 35GW/ C</span></p>\n<p>Sa tehnologijom <strong>turbo visokofrekventnog starta</strong>, Frozzini klima uređaji mogu brzo rashladiti prostoriju.</p>\n<hr />\n<h4></h4>\n<p>&nbsp;</p>\n",
+  "content_html": "<p>Frozzini klima 12 000 BTU | On Off | 12000 BTU | KFR-35GW/C</p>\n<p><button id=\"toggleBtn\">Prikaži specifikacije</button></p>\n<div id=\"specsTable\" style=\"display: none;\">\n<table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">\n<tbody>\n<tr>\n<td>Tip klime</td>\n<td>On Off (Split Sistem)</td>\n</tr>\n<tr>\n<td>Brend</td>\n<td>Frozzini</td>\n</tr>\n<tr>\n<td>Model / Oznaka</td>\n<td>KFR-35GW/C</td>\n</tr>\n<tr>\n<td>Kapacitet</td>\n<td>12000 BTU</td>\n</tr>\n<tr>\n<td>Napon</td>\n<td>220-240V / 50Hz</td>\n</tr>\n<tr>\n<td>Gas</td>\n<td>R410a / 0.575kg</td>\n</tr>\n<tr>\n<td>Struja (radna)</td>\n<td>4.57 &#8211; 4.72A</td>\n</tr>\n<tr>\n<td>Nazivna struja</td>\n<td>7.9A</td>\n</tr>\n<tr>\n<td>Boja</td>\n<td>Bela</td>\n</tr>\n<tr>\n<td>Klimatski tip</td>\n<td>T1</td>\n</tr>\n<tr>\n<td>Protok vazduha</td>\n<td>600 m³/h</td>\n</tr>\n<tr>\n<td>Kapacitet hlađenja</td>\n<td>3200W</td>\n</tr>\n<tr>\n<td>Kapacitet grejanja</td>\n<td>3200W</td>\n</tr>\n<tr>\n<td>LED displej</td>\n<td>Ima</td>\n</tr>\n<tr>\n<td>Biofilteri</td>\n<td>Ima</td>\n</tr>\n<tr>\n<td>Zaštita od vlage</td>\n<td>IPX4</td>\n</tr>\n<tr>\n<td>Težina (unutrašnja jedinica)</td>\n<td>7.5 kg</td>\n</tr>\n<tr>\n<td>Težina (spoljašnja jedinica)</td>\n<td>23.3 kg</td>\n</tr>\n<tr>\n<td>Dimenzije unutrašnje jedinice (ŠxDxV)</td>\n<td>800 x 292 x 190 mm</td>\n</tr>\n<tr>\n<td>Dimenzije spoljašnje jedinice (ŠxDxV)</td>\n<td>700 x 255 x 551 mm</td>\n</tr>\n<tr>\n<td>Energetska efikasnost</td>\n<td>A</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p><script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n    document.getElementById(\"toggleBtn\").addEventListener(\"click\", function() {\n        var table = document.getElementById(\"specsTable\");\n        if (table.style.display === \"none\") {\n            table.style.display = \"block\";\n            this.textContent = \"Sakrij specifikacije\";\n        } else {\n            table.style.display = \"none\";\n            this.textContent = \"Prikaži specifikacije\";\n        }\n    });\n});\n</script></p>\n<hr />\n<p class=\"\" data-start=\"122\" data-end=\"181\"><strong data-start=\"122\" data-end=\"181\">Frozzini klima 12000 BTU On Off – pouzdano hlađenje i grejanje</strong></p>\n<p class=\"\" data-start=\"183\" data-end=\"454\">Klima idealna je za stanove, kancelarije ili manje lokale. Pruža efikasno hlađenje tokom letnjih vrućina i pouzdano grejanje zimi. Energetski efikasna (klasa A) i jednostavna za korišćenje, sa LED displejom koji olakšava podešavanje temperature.</p>\n<p class=\"\" data-start=\"456\" data-end=\"727\">Zahvaljujući snažnom <a href=\"https://forum.benchmark.rs/threads/da-li-klima-treba-da-ima-konstantan-protok-vazduha.505594/\">protoku vazduha</a> od 600 m³/h, prostor se brzo rashlađuje ili zagreva, dok ugrađeni biofilteri pomažu u održavanju čistijeg i prijatnijeg vazduha.</p>\n<p class=\"\" data-start=\"456\" data-end=\"727\">Radi tiho, štedi struju i lepo se uklapa u svaki enterijer zahvaljujući svom jednostavnom, belom dizajnu.</p>\n<p class=\"\" data-start=\"729\" data-end=\"769\">Praktičan izbor za svakodnevnu udobnost.</p>\n<h4>Pogledajte Inverter modele Frozzini klima <a href=\"https://www.novazza.rs/kategorije/klime/\">KLIKOM OVDE</a>.</h4>\n",
+  "excerpt_sections": [
+    {
+      "heading": null,
+      "level": null,
+      "paragraphs": [
+        "KFR 35GW/ C",
+        "Sa tehnologijom turbo visokofrekventnog starta, Frozzini klima uređaji mogu brzo rashladiti prostoriju."
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "heading": null,
+      "level": null,
+      "paragraphs": [
+        "Frozzini klima 12 000 BTU | On Off | 12000 BTU | KFR-35GW/C",
+        "Prikaži specifikacije",
+        "Tip klime: On Off (Split Sistem)",
+        "Brend: Frozzini",
+        "Model / Oznaka: KFR-35GW/C",
+        "Kapacitet: 12000 BTU",
+        "Napon: 220-240V / 50Hz",
+        "Gas: R410a / 0.575kg",
+        "Struja (radna): 4.57 – 4.72A",
+        "Nazivna struja: 7.9A",
+        "Boja: Bela",
+        "Klimatski tip: T1",
+        "Protok vazduha: 600 m³/h",
+        "Kapacitet hlađenja: 3200W",
+        "Kapacitet grejanja: 3200W",
+        "LED displej: Ima",
+        "Biofilteri: Ima",
+        "Zaštita od vlage: IPX4",
+        "Težina (unutrašnja jedinica): 7.5 kg",
+        "Težina (spoljašnja jedinica): 23.3 kg",
+        "Dimenzije unutrašnje jedinice (ŠxDxV): 800 x 292 x 190 mm",
+        "Dimenzije spoljašnje jedinice (ŠxDxV): 700 x 255 x 551 mm",
+        "Energetska efikasnost: A",
+        "Frozzini klima 12000 BTU On Off – pouzdano hlađenje i grejanje",
+        "Klima idealna je za stanove, kancelarije ili manje lokale. Pruža efikasno hlađenje tokom letnjih vrućina i pouzdano grejanje zimi. Energetski efikasna (klasa A) i jednostavna za korišćenje, sa LED displejom koji olakšava podešavanje temperature.",
+        "Zahvaljujući snažnom protoku vazduha od 600 m³/h, prostor se brzo rashlađuje ili zagreva, dok ugrađeni biofilteri pomažu u održavanju čistijeg i prijatnijeg vazduha.",
+        "Radi tiho, štedi struju i lepo se uklapa u svaki enterijer zahvaljujući svom jednostavnom, belom dizajnu.",
+        "Praktičan izbor za svakodnevnu udobnost."
+      ]
+    },
+    {
+      "heading": "Pogledajte Inverter modele Frozzini klima KLIKOM OVDE.",
+      "level": "h4",
+      "paragraphs": []
+    }
+  ],
+  "images": [
+    "https://www.novazza.rs/wp-content/uploads/2024/11/Frozzini-klima-On-Off-KFR-35GWA.jpg"
+  ],
+  "links": [
+    "https://forum.benchmark.rs/threads/da-li-klima-treba-da-ima-konstantan-protok-vazduha.505594/",
+    "https://www.novazza.rs/kategorije/klime/"
+  ],
+  "featured_image": "https://www.novazza.rs/wp-content/uploads/2024/11/Frozzini-klima-On-Off-KFR-35GWA.jpg"
+}

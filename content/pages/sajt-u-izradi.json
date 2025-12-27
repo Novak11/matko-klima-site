@@ -1,0 +1,18 @@
+{
+  "id": 1088,
+  "title": "Sajt u izradi",
+  "slug": "sajt-u-izradi",
+  "source_url": "https://centarklimauredjaja.com/sajt-u-izradi/",
+  "content_html": "\t\t<div data-elementor-type=\"wp-page\" data-elementor-id=\"1088\" class=\"elementor elementor-1088\" data-elementor-post-type=\"page\">\n\t\t\t\t\t\t<section class=\"elementor-section elementor-top-section elementor-element elementor-element-a849522 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle\" data-id=\"a849522\" data-element_type=\"section\" data-settings=\"{&quot;background_background&quot;:&quot;gradient&quot;}\">\n\t\t\t\t\t\t<div class=\"elementor-container elementor-column-gap-default\">\n\t\t\t\t\t<div class=\"elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-57bd5f7\" data-id=\"57bd5f7\" data-element_type=\"column\">\n\t\t\t<div class=\"elementor-widget-wrap elementor-element-populated\">\n\t\t\t\t\t\t<div class=\"elementor-element elementor-element-9aef6c1 elementor-widget elementor-widget-heading\" data-id=\"9aef6c1\" data-element_type=\"widget\" data-widget_type=\"heading.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<h1 class=\"elementor-heading-title elementor-size-default\">SAJT U IZRADI</h1>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-d206bb3 elementor-widget elementor-widget-text-editor\" data-id=\"d206bb3\" data-element_type=\"widget\" data-widget_type=\"text-editor.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t<p>Sajt je u izradi, uskoro će biti dostupan&#8230;</p>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t</div>\n\t\t</section>\n\t\t\t\t</div>\n\t\t",
+  "sections": [
+    {
+      "heading": "SAJT U IZRADI",
+      "level": "h1",
+      "paragraphs": [
+        "Sajt je u izradi, uskoro će biti dostupan…"
+      ]
+    }
+  ],
+  "images": [],
+  "links": []
+}
