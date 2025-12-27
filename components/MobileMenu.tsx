@@ -80,10 +80,10 @@ export function MobileMenu({ isOpen, onClose, navItems }: MobileMenuProps) {
           >
             <a
               className="rounded-full bg-[color:var(--mk-orange)] px-4 py-3 text-center text-sm font-semibold text-white transition hover:brightness-95"
-              href="tel:0645356387"
+              href="tel:0604040159"
               onClick={onClose}
             >
-              Pozovite 064 535 6387
+              Pozovite 060 404 0159
             </a>
             <Link
               className="rounded-full border border-[color:var(--mk-blue)] px-4 py-3 text-center text-sm font-semibold text-[color:var(--mk-blue)] shadow-sm transition hover:bg-[color:var(--mk-blue)] hover:text-white"

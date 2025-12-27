@@ -25,7 +25,7 @@ export default async function Home() {
     ...serviceSlugs.map((slug) => getPageBySlug(slug)),
   ]);
 
-  const heroTitle = home?.sections?.[0]?.heading ?? "Ovlašćeni servis klima uređaja";
+  const heroTitle = home?.sections?.[0]?.heading ?? "Servis klima uređaja i elektro radovi";
   const heroSubtitle = home?.sections?.[1]?.heading ?? "Brz odziv i pouzdana usluga";
   const heroCopy = home?.sections?.[1]?.paragraphs?.[0];
   const heroCopyShort = heroCopy ? `${heroCopy.split(".")[0]}.` : undefined;
@@ -96,7 +96,7 @@ export default async function Home() {
               Hitna intervencija
             </p>
             <p className="mt-2 text-4xl font-semibold text-[color:var(--mk-blue-deep)]">
-              064 535 6387
+              060 404 0159
             </p>
             <p className="mt-1 text-sm font-medium text-[color:var(--mk-muted)]">
               Pozovite odmah za dolazak u najkraćem roku.
@@ -105,7 +105,7 @@ export default async function Home() {
 
           <div className="grid gap-3 sm:grid-cols-2 md:hidden">
             <a
-              href="tel:0645356387"
+              href="tel:0604040159"
               className="rounded-full bg-[color:var(--mk-orange)] px-6 py-3 text-center text-sm font-semibold text-white"
             >
               Pozovite odmah
@@ -119,7 +119,7 @@ export default async function Home() {
           </div>
           <div className="hidden flex-wrap gap-3 md:flex">
             <a
-              href="tel:0645356387"
+              href="tel:0604040159"
               className="rounded-full bg-[color:var(--mk-orange)] px-6 py-3 text-sm font-semibold text-white"
             >
               Pozovite sada
@@ -226,7 +226,7 @@ export default async function Home() {
           </div>
           <div className="mt-4 flex flex-col gap-3 sm:flex-row">
             <a
-              href="tel:0645356387"
+              href="tel:0604040159"
               className="rounded-full bg-[color:var(--mk-orange)] px-5 py-2 text-center text-sm font-semibold text-white"
             >
               Pozovite odmah
@@ -244,7 +244,7 @@ export default async function Home() {
       <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-[color:var(--mk-border)] bg-white/95 px-4 py-3 backdrop-blur md:hidden">
         <div className="mx-auto flex w-full max-w-4xl gap-3">
           <a
-            href="tel:0645356387"
+            href="tel:0604040159"
             className="flex-1 rounded-full bg-[color:var(--mk-orange)] px-4 py-2 text-center text-sm font-semibold text-white"
           >
             Pozovite sada

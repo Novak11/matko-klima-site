@@ -104,7 +104,7 @@ const fallbackSections: Section[] = [
     paragraphs: [
       "Cene su informativne i mogu da variraju u zavisnosti od obima posla i potrebnog materijala.",
       "Za pravna lica izdaje se račun i garancija na izvršene usluge.",
-      "Za tačnu cenu pozovite 064 535 6387.",
+      "Za tačnu cenu pozovite 060 404 0159.",
     ],
   },
 ];
@@ -129,7 +129,7 @@ export default async function CenovnikPage() {
           <p className="mt-3 max-w-2xl text-sm text-[color:var(--mk-muted)]">{intro}</p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <a
-              href="tel:0645356387"
+              href="tel:0604040159"
               className="rounded-full bg-[color:var(--mk-orange)] px-5 py-2 text-center text-sm font-semibold text-white"
             >
               Pozovite za cenu

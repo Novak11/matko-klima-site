@@ -7,7 +7,7 @@ const fallbackIntro =
 const contactCards = [
   {
     title: "Telefon",
-    lines: ["Prodaja: 064 535 6387", "Servis: 063 122 08 26", "Montaža: 065 4616 519"],
+    lines: ["Prodaja: 060 404 0159", "Servis: 063 122 08 26", "Montaža: 065 4616 519"],
   },
   {
     title: "Email",
@@ -54,7 +54,7 @@ export default async function KontaktPage({
           <p className="mt-3 max-w-2xl text-sm text-[color:var(--mk-muted)]">{intro}</p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <a
-              href="tel:0645356387"
+              href="tel:0604040159"
               className="rounded-full bg-[color:var(--mk-orange)] px-6 py-3 text-center text-sm font-semibold text-white"
             >
               Pozovite odmah
