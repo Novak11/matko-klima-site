@@ -57,13 +57,13 @@ export default async function Home() {
       <section className="hero-grid border-b border-[color:var(--mk-border)] bg-gradient-to-b from-[color:var(--mk-blue-soft)] via-white to-white">
         <div className="mx-auto flex w-full max-w-4xl flex-col gap-6 px-6 py-12">
           <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[color:var(--mk-blue)]">
-            Ovlašćeni klima servis
+            Frigo i elektro usluge
           </p>
           <h1 className="text-5xl font-semibold text-[color:var(--mk-blue-deep)] md:text-6xl">
             {heroTitle}
           </h1>
           <p className="text-xl font-semibold text-[color:var(--mk-blue)] md:text-2xl">
-            {heroSubtitle}
+            Klima servisi i elektroinstalacije
           </p>
           {heroCopyShort ? (
             <p className="text-base font-medium leading-relaxed text-[color:var(--mk-muted)] md:hidden">
@@ -78,13 +78,13 @@ export default async function Home() {
 
           <div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-[color:var(--mk-muted)]">
             <span className="rounded-full border border-[color:var(--mk-border)] bg-white px-3 py-1">
-              Servis
+              Servis klima
             </span>
             <span className="rounded-full border border-[color:var(--mk-border)] bg-white px-3 py-1">
               Ugradnja
             </span>
             <span className="rounded-full border border-[color:var(--mk-border)] bg-white px-3 py-1">
-              Popravka
+              Elektroinstalacije
             </span>
             <span className="text-xs uppercase tracking-[0.2em] text-[color:var(--mk-blue)]">
               Poziv → Dolazak → Rešenje

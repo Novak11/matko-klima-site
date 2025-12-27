@@ -10,6 +10,46 @@ const serviceSlugs = [
   "demontaza-klima-uredaja",
 ];
 
+// Electrical services (dummy data)
+const electricalServices = [
+  {
+    slug: "elektroinstalacije",
+    title: "Elektroinstalacije",
+    intro: "Kompletna ugradnja elektroinstalacija za stanove, kuće i poslovne prostore.",
+    price: "od 1.800 RSD/m²",
+  },
+  {
+    slug: "zamena-uticnica-prekidaca",
+    title: "Zamena utičnica i prekidača",
+    intro: "Brza zamena i postavljanje novih utičnica, prekidača i osigurača.",
+    price: "od 1.500 RSD",
+  },
+  {
+    slug: "popravka-instalacija",
+    title: "Popravka instalacija",
+    intro: "Dijagnostika i popravka kvarova na električnoj instalaciji.",
+    price: "od 2.000 RSD",
+  },
+  {
+    slug: "montaza-rasvete",
+    title: "Montaža rasvete",
+    intro: "Ugradnja i povezivanje svetiljki, leda i plafonskih svetala.",
+    price: "od 1.200 RSD",
+  },
+  {
+    slug: "zamena-tablice",
+    title: "Zamena razvodne table",
+    intro: "Ugradnja i povezivanje nove razvodne table sa osiguračima.",
+    price: "od 8.000 RSD",
+  },
+  {
+    slug: "gradjevinski-elektro",
+    title: "Građevinski elektro radovi",
+    intro: "Elektroinstalacije za nove objekte, kompletna razvodna mreža.",
+    price: "od 2.500 RSD/m²",
+  },
+];
+
 // Pricing mapping from cenovnik
 const servicePricing: Record<string, string> = {
   "servis-klima-uredaja": "od 2.500 RSD",
@@ -43,15 +83,24 @@ export default async function UslugePage() {
             Usluge
           </p>
           <h1 className="mt-3 text-3xl font-semibold text-[color:var(--mk-blue-deep)]">
-            Kompletan servis i ugradnja klima uređaja
+            Frigo i elektro usluge
           </h1>
           <p className="mt-3 max-w-2xl text-sm text-[color:var(--mk-muted)]">
-            Sve ključne usluge na jednom mestu, jasno i bez viška informacija.
+            Svi ključni radovi na klimama i elektroinstalacijama — servis, ugradnja i popravke.
           </p>
         </div>
       </section>
 
+      {/* HVAC Services Section */}
       <section className="mx-auto w-full max-w-5xl px-6 py-10">
+        <div className="mb-6">
+          <h2 className="text-xl font-semibold text-[color:var(--mk-blue-deep)]">
+            Klima uređaji
+          </h2>
+          <p className="mt-1 text-sm text-[color:var(--mk-muted)]">
+            Servis, ugradnja i održavanje klima sistema
+          </p>
+        </div>
         <div className="space-y-4">
           {services.map((service) => (
             <div
@@ -60,14 +109,50 @@ export default async function UslugePage() {
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1">
-                  <h2 className="text-base font-semibold text-[color:var(--mk-blue-deep)]">
+                  <h3 className="text-base font-semibold text-[color:var(--mk-blue-deep)]">
                     {service.title}
-                  </h2>
+                  </h3>
                   {service.intro ? (
                     <p className="mt-1 text-sm text-[color:var(--mk-muted)]">
                       {service.intro}
                     </p>
                   ) : null}
+                </div>
+                <div className="shrink-0 text-right">
+                  <p className="text-base font-semibold text-[color:var(--mk-orange)]">
+                    {service.price}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Electrical Services Section */}
+      <section className="mx-auto w-full max-w-5xl px-6 pb-10">
+        <div className="mb-6">
+          <h2 className="text-xl font-semibold text-[color:var(--mk-blue-deep)]">
+            Elektro usluge
+          </h2>
+          <p className="mt-1 text-sm text-[color:var(--mk-muted)]">
+            Elektroinstalacije za stanove, kuće i građevinske objekte
+          </p>
+        </div>
+        <div className="space-y-4">
+          {electricalServices.map((service) => (
+            <div
+              key={service.slug}
+              className="rounded-2xl border-l-4 border-l-[color:var(--mk-orange)] border-r border-r-[color:var(--mk-border)] border-t border-t-[color:var(--mk-border)] border-b border-b-[color:var(--mk-border)] bg-white px-4 py-4 shadow-sm transition-all hover:shadow-md"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1">
+                  <h3 className="text-base font-semibold text-[color:var(--mk-blue-deep)]">
+                    {service.title}
+                  </h3>
+                  <p className="mt-1 text-sm text-[color:var(--mk-muted)]">
+                    {service.intro}
+                  </p>
                 </div>
                 <div className="shrink-0 text-right">
                   <p className="text-base font-semibold text-[color:var(--mk-orange)]">

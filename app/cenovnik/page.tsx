@@ -4,8 +4,13 @@ import { filterSections, getPageBySlug, type Section } from "@/lib/content";
 
 const fallbackSections: Section[] = [
   {
-    heading: "Servis i održavanje",
+    heading: "KLIMA UREĐAJI",
     level: "h2",
+    paragraphs: [],
+  },
+  {
+    heading: "Servis i održavanje",
+    level: "h3",
     paragraphs: [
       "- Servis klima 9/12 BTU (godišnji) — 2.500 RSD",
       "- Servis klima 18 BTU — 3.500 RSD",
@@ -16,7 +21,7 @@ const fallbackSections: Section[] = [
   },
   {
     heading: "Ugradnja i demontaža",
-    level: "h2",
+    level: "h3",
     paragraphs: [
       "- Ugradnja 9/12 BTU (standardna instalacija do 3m) — 11.000 RSD",
       "- Ugradnja 18 BTU — 13.000 RSD",
@@ -27,7 +32,7 @@ const fallbackSections: Section[] = [
   },
   {
     heading: "Popravke i zamene",
-    level: "h2",
+    level: "h3",
     paragraphs: [
       "- Dijagnostika kvara — 1.500 RSD",
       "- Punjenje freonom (po uređaju) — od 6.500 RSD",
@@ -37,8 +42,8 @@ const fallbackSections: Section[] = [
     ],
   },
   {
-    heading: "Dodatne usluge",
-    level: "h2",
+    heading: "Dodatne usluge - klime",
+    level: "h3",
     paragraphs: [
       "- Bušenje zida (beton) — 2.000 RSD",
       "- Štemovanje zida (po metru) — 1.200 RSD",
@@ -48,10 +53,56 @@ const fallbackSections: Section[] = [
     ],
   },
   {
+    heading: "ELEKTRO USLUGE",
+    level: "h2",
+    paragraphs: [],
+  },
+  {
+    heading: "Elektroinstalacije",
+    level: "h3",
+    paragraphs: [
+      "- Kompletna elektroinstalacija stana/kuće — od 1.800 RSD/m²",
+      "- Elektroinstalacije za poslovne prostore — od 2.000 RSD/m²",
+      "- Građevinski elektro radovi (novi objekti) — od 2.500 RSD/m²",
+      "- Delimična izmena instalacija — od 2.200 RSD/m²",
+    ],
+  },
+  {
+    heading: "Popravke i zamene",
+    level: "h3",
+    paragraphs: [
+      "- Zamena utičnice ili prekidača — 1.500 RSD",
+      "- Popravka instalacija (dijagnostika + rad) — od 2.000 RSD",
+      "- Zamena razvodne table (12 osigurača) — 8.000 RSD",
+      "- Zamena razvodne table (18 osigurača) — 10.000 RSD",
+      "- Zamena razvodne table (24 osigurača) — 12.000 RSD",
+    ],
+  },
+  {
+    heading: "Montaža rasvete",
+    level: "h3",
+    paragraphs: [
+      "- Ugradnja svetiljke/plafonjere — 1.200 RSD",
+      "- Ugradnja LED trake (po metru) — 800 RSD",
+      "- Ugradnja spoljne rasvete — od 1.500 RSD",
+      "- Povezivanje luster/plafonskih svetala — 1.800 RSD",
+    ],
+  },
+  {
+    heading: "Dodatne usluge - elektro",
+    level: "h3",
+    paragraphs: [
+      "- Bušenje zida za utičnice/prekidače — 800 RSD",
+      "- Štemovanje za kablove (po metru) — 600 RSD",
+      "- Izlazak na teren — 1.000 RSD",
+      "- Hitna intervencija — 2.500 RSD",
+    ],
+  },
+  {
     heading: "Napomena",
     level: "h3",
     paragraphs: [
-      "Cene su informativne i mogu da variraju u zavisnosti od modela i stanja uređaja.",
+      "Cene su informativne i mogu da variraju u zavisnosti od obima posla i potrebnog materijala.",
       "Za pravna lica izdaje se račun i garancija na izvršene usluge.",
       "Za tačnu cenu pozovite 064 535 6387.",
     ],

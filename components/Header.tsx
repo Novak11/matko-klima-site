@@ -31,7 +31,7 @@ export function Header() {
               MATCO Frigo &amp; Elektro
             </span>
             <span className="hidden text-xs uppercase tracking-[0.2em] text-[color:var(--mk-muted)] sm:block">
-              Servis i prodaja klime
+              Frigo i elektro usluge
             </span>
           </div>
         </Link>
