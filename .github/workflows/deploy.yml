@@ -59,14 +59,19 @@ jobs:
 
       - name: Upload clean URLs (copy index.html to parent path)
         run: |
-          # For each directory with index.html, also upload as clean URL
-          # e.g., cenovnik/index.html -> also upload as 'cenovnik' object
+          # For each directory with index.html, upload as both clean URL and with trailing slash
           cd out
           for dir in */; do
             dir_name=${dir%/}
             if [ -f "$dir_name/index.html" ] && [ "$dir_name" != "_next" ] && [ "$dir_name" != "_not-found" ]; then
-              echo "Uploading clean URL: $dir_name"
+              echo "Uploading clean URLs for: $dir_name"
+              # Upload without trailing slash: /kontakt
               aws s3 cp "$dir_name/index.html" "s3://${{ env.S3_BUCKET }}/$dir_name" \
+                --region ${{ env.AWS_REGION }} \
+                --cache-control "public,max-age=0,must-revalidate" \
+                --content-type "text/html"
+              # Upload with trailing slash: /kontakt/
+              aws s3 cp "$dir_name/index.html" "s3://${{ env.S3_BUCKET }}/${dir_name}/" \
                 --region ${{ env.AWS_REGION }} \
                 --cache-control "public,max-age=0,must-revalidate" \
                 --content-type "text/html"
