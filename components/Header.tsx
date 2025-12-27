@@ -18,7 +18,7 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[color:var(--mk-border)] bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-[color:var(--mk-border)] bg-white shadow-sm">
       <div className="mx-auto flex w-full max-w-6xl items-center gap-4 px-4 py-3 sm:px-6">
         <Link href="/" className="flex min-w-0 shrink-0 items-center gap-3">
           <img
