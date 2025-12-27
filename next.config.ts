@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  // Disable development features in production
+  reactStrictMode: true,
+  poweredByHeader: false,
 };
 
 export default nextConfig;

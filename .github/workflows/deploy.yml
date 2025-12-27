@@ -46,7 +46,6 @@ jobs:
             --region ${{ env.AWS_REGION }} \
             --cache-control "public,max-age=31536000,immutable" \
             --exclude "*.html" \
-            --exclude "*.txt" \
             --delete
 
       - name: Sync HTML to S3 (with short cache)
