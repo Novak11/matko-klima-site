@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getPageBySlug } from "@/lib/content";
 
 const serviceSlugs = [
@@ -11,6 +10,17 @@ const serviceSlugs = [
   "demontaza-klima-uredaja",
 ];
 
+// Pricing mapping from cenovnik
+const servicePricing: Record<string, string> = {
+  "servis-klima-uredaja": "od 2.500 RSD",
+  "ugradnja-klima-uredaja": "od 11.000 RSD",
+  "popravka-klima-uredaja": "od 1.500 RSD",
+  "ciscenje-klima-uredjaja": "2.000 RSD",
+  "punjenje-klima-uredaja": "od 6.500 RSD",
+  "zamena-kondenzatora": "4.500 RSD",
+  "demontaza-klima-uredaja": "4.000 RSD",
+};
+
 export default async function UslugePage() {
   const services = await Promise.all(
     serviceSlugs.map(async (slug) => {
@@ -20,6 +30,7 @@ export default async function UslugePage() {
         slug,
         title: page?.title ?? slug.replace(/-/g, " "),
         intro,
+        price: servicePricing[slug] ?? "Po dogovoru",
       };
     })
   );
@@ -43,13 +54,12 @@ export default async function UslugePage() {
       <section className="mx-auto w-full max-w-5xl px-6 py-10">
         <div className="space-y-4">
           {services.map((service) => (
-            <Link
+            <div
               key={service.slug}
-              href={`/${service.slug}`}
-              className="block rounded-2xl border border-[color:var(--mk-border)] bg-white px-4 py-4 shadow-sm"
+              className="rounded-2xl border-l-4 border-l-[color:var(--mk-blue)] border-r border-r-[color:var(--mk-border)] border-t border-t-[color:var(--mk-border)] border-b border-b-[color:var(--mk-border)] bg-white px-4 py-4 shadow-sm transition-all hover:shadow-md"
             >
               <div className="flex items-start justify-between gap-4">
-                <div>
+                <div className="flex-1">
                   <h2 className="text-base font-semibold text-[color:var(--mk-blue-deep)]">
                     {service.title}
                   </h2>
@@ -59,9 +69,13 @@ export default async function UslugePage() {
                     </p>
                   ) : null}
                 </div>
-                <span className="text-sm font-semibold text-[color:var(--mk-orange)]">→</span>
+                <div className="shrink-0 text-right">
+                  <p className="text-base font-semibold text-[color:var(--mk-orange)]">
+                    {service.price}
+                  </p>
+                </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </section>

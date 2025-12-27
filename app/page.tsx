@@ -136,7 +136,7 @@ export default async function Home() {
             {stats.map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-2xl border border-[color:var(--mk-border)] bg-white p-3 text-center shadow-sm"
+                className="rounded-2xl border-t-4 border-t-[color:var(--mk-blue)] border-r border-r-[color:var(--mk-border)] border-l border-l-[color:var(--mk-border)] border-b border-b-[color:var(--mk-border)] bg-white p-3 text-center shadow-sm"
               >
                 <p className="text-lg font-semibold text-[color:var(--mk-blue-deep)]">
                   {stat.value}
@@ -167,7 +167,7 @@ export default async function Home() {
           {services.slice(0, 4).map((service, index) => (
             <div
               key={service.slug}
-              className={`rounded-2xl border border-[color:var(--mk-border)] bg-white p-4 shadow-sm ${
+              className={`rounded-2xl border-l-4 border-l-[color:var(--mk-blue)] border-r border-r-[color:var(--mk-border)] border-t border-t-[color:var(--mk-border)] border-b border-b-[color:var(--mk-border)] bg-white p-4 shadow-sm transition-all hover:shadow-md ${
                 index > 2 ? "hidden sm:block" : ""
               }`}
             >
