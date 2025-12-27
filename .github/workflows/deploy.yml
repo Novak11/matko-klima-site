@@ -58,6 +58,22 @@ jobs:
             --exclude "*" \
             --include "*.html"
 
+      - name: Upload clean URLs (copy index.html to parent path)
+        run: |
+          # For each directory with index.html, also upload as clean URL
+          # e.g., cenovnik/index.html -> also upload as 'cenovnik' object
+          cd out
+          for dir in */; do
+            dir_name=${dir%/}
+            if [ -f "$dir_name/index.html" ] && [ "$dir_name" != "_next" ] && [ "$dir_name" != "_not-found" ]; then
+              echo "Uploading clean URL: $dir_name"
+              aws s3 cp "$dir_name/index.html" "s3://${{ env.S3_BUCKET }}/$dir_name" \
+                --region ${{ env.AWS_REGION }} \
+                --cache-control "public,max-age=0,must-revalidate" \
+                --content-type "text/html"
+            fi
+          done
+
       - name: Invalidate CloudFront cache
         run: |
           aws cloudfront create-invalidation \
